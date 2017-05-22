@@ -9,23 +9,23 @@ Features
  
 Usage Guide
 ------------
-//Create instance with template file path as input:
+//Create instance with template file path as input:  
 WordHelper rp = new WordHelper("/path/to/template/file/");
 
-//Update template field:
+//Update template field:  
 rp.replaceText("##CompanyName##", "MYCORP");
 
-//Update table:
-  //Create List variable to be used for searching table in template file:
+//Update table:  
+  //Create List variable to be used for searching table in template file:  
 List<String> tbheads = Arrays.asList("First Column","Second Column","Third Column"); 
 
-  //Sample Two dimensional List to fill the table rows:
+  //Sample Two dimensional List to fill the table rows:  
 List<List<String>> tbdata = Arrays.asList(Arrays.asList("Row2Col1","Row2Col2","Row2Col3"),Arrays.asList("Row3Col1","Row3Col2","Row3Col3"),Arrays.asList("Row4Col1","Row4Col2","Row4Col3")); 
 
-  //Call updateTable function to update Table in document template:
+  //Call updateTable function to update Table in document template:  
 rp.updateTable(tbheads,tbdata); 
 
-//Save Document:
+//Save Document:  
 rp.saveAs("/path/to/output/document.doc");
 
 Word Template Creation Guide
