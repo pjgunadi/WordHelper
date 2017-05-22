@@ -1,5 +1,5 @@
 # WordHelper
-WordHelper is a simple java application for constructing MS Word document using Word Template input.
+WordHelper is a simple java application for constructing MS Word document using Word Template input.  
 The code implements Apache POI. For more information about Apache POI: https://poi.apache.org/
 
 Features
